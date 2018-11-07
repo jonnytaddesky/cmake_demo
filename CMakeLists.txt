@@ -5,11 +5,5 @@ find_package(Qt5 REQUIRED COMPONENTS
     Widgets
     )
 
-add_executable(cmake_demo
-    demo.cpp
-    main.cpp
-    )
-
-target_link_libraries(cmake_demo
-    PRIVATE Qt5::Widgets
-    )
+add_subdirectory(demo_lib)
+add_subdirectory(src)

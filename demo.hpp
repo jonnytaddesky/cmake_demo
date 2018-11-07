@@ -6,7 +6,7 @@ namespace Demo {
 
 class CWidget final : public QWidget
 {
-public: // methods
+protected: // methods
     void paintEvent(QPaintEvent *) override;
 };
 

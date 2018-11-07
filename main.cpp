@@ -1,4 +1,4 @@
-#include <QtCore/QApplication>
+#include <QtWidgets/QApplication>
 #include "demo.hpp"
 
 int main(int argc, char **argv)

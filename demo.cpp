@@ -1,13 +1,13 @@
 #include "demo.hpp"
 
-namespace {
+namespace Demo {
 
-CWidget::paintEvent(QPaintEvent *)
+void CWidget::paintEvent(QPaintEvent *)
 {
-    QPainter p(*this);
-    p.fillRect(rect(), QColor(qrand() % 256, qrand() % 256, qrand() % 256, ));
+    QPainter p(this);
+    p.fillRect(rect(), QColor(qrand() % 256, qrand() % 256, qrand() % 256));
 
     QTimer::singleShot(16, this, SLOT(update()));
 }
 
-} // namespace
+} // namespace Demo
